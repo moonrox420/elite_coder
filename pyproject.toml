@@ -1,0 +1,229 @@
+# =============================================================================
+# elite-coder — unified build, dependency and tooling configuration.
+#
+# Repository layout covered by this file:
+#   * root modules ... Elite Coding Assistant (classifier -> hybrid RAG ->
+#                      Ollama generation); REPL via assistant.py, web preview
+#                      via web_assistant.py. Dependency set mirrors the root
+#                      requirements.txt.
+#   * backend/ ....... ComfyAudit FastAPI platform (app.main:app). Its runtime
+#                      set is exposed as the optional "backend" extra
+#                      (mirrors backend/requirements.txt).
+#   * training/ ...... classifier fine-tuning driven by `run.py --train`.
+#   * frontend/ ...... Vite + React UI (Node toolchain, not managed here).
+#
+# Install matrix:
+#   pip install -e .            -> root assistant runtime + web preview
+#   pip install -e ".[backend]" -> FastAPI platform runtime (run from backend/)
+#   pip install -e ".[dev]"     -> lint + test tooling for both subsystems
+#   pip install -e ".[chroma]"  -> one-off ChromaDB -> pgvector migration tool
+# =============================================================================
+
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "elite-coder"
+# Mirrors the platform version in backend/app/__init__.py (`__version__`).
+version = "2.4.0"
+description = """
+Self-hosted AI coding assistant: DistilBERT intent/language classifier ->
+hybrid RAG (pgvector + BM25 + cross-encoder rerank) -> local Ollama
+generation, plus the ComfyAudit FastAPI audit platform.
+"""
+readme = "README.md"
+# Floor declared in README.md; both codebases rely on PEP 604 unions (3.10+).
+requires-python = ">=3.10"
+keywords = [
+  "ai-coding-assistant",
+  "fastapi",
+  "local-llm",
+  "ollama",
+  "pgvector",
+  "rag",
+  "tree-sitter",
+]
+classifiers = [
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Topic :: Software Development :: Code Generators",
+]
+
+# Runtime dependencies of the root assistant (requirements.txt) plus the three
+# packages web_assistant.py imports directly but the root README/requirements
+# omit today (fastapi, uvicorn, pydantic).
+dependencies = [
+  # Retrieval + vector store (pgstore.py, retrieval.py).
+  "ollama>=0.4.7",
+  "psycopg[binary]>=3.2",
+  "pgvector>=0.3.6",
+  "rank-bm25>=0.2.2",
+  # Tree-sitter chunking (chunker.py) and its language grammars.
+  "tree-sitter>=0.23",
+  "tree-sitter-python>=0.23",
+  "tree-sitter-javascript>=0.23",
+  "tree-sitter-typescript>=0.23",
+  "tree-sitter-go>=0.23",
+  "tree-sitter-rust>=0.23",
+  "tree-sitter-java>=0.23",
+  # Classifier inference + cross-encoder reranking (assistant.py -> RAG).
+  "numpy>=2.0",
+  "sentence-transformers>=3.3",
+  "torch>=2.6",
+  "transformers>=4.48",
+  # Classifier fine-tuning (run.py --train, training/train_multitask.py).
+  "datasets>=3.0",
+  "scikit-learn>=1.5",
+  # Cross-cutting utilities.
+  "tenacity>=9.0",
+  "json-repair>=0.35",
+  # Pinned because requirements.txt verified this exact version against the
+  # development environment while the ML stack stays intentionally unpinned.
+  "httpx==0.28.1",
+  # Web preview server (web_assistant.py).
+  "fastapi>=0.141",
+  "uvicorn[standard]>=0.52",
+  "pydantic>=2.13",
+]
+
+# -----------------------------------------------------------------------------
+# Optional dependency groups.
+# -----------------------------------------------------------------------------
+[project.optional-dependencies]
+# ComfyAudit FastAPI platform (delta on top of the base set above). Start it
+# with `uvicorn app.main:app` from backend/, where backend/pyproject.toml and
+# backend/pytest.ini keep the backend-specific tool configuration.
+backend = [
+  "sqlalchemy[asyncio]>=2.0.52",
+  "asyncpg>=0.31",
+  "pydantic-settings>=2.15",
+  "email-validator>=2.3",
+  "PyJWT>=2.13",
+  "bcrypt>=5.0",
+  "python-multipart>=0.0.32",
+]
+# One-off ChromaDB -> PostgreSQL + pgvector migration
+# (elite-coder-migrate-chroma -> migrate_chroma_to_pg.py).
+chroma = ["chromadb>=0.5"]
+# Lint and test tooling for both subsystems (root test_pgstore.py and
+# backend/tests, which needs aiosqlite + greenlet + pytest-asyncio).
+dev = [
+  "black>=25.1",
+  "ruff>=0.16",
+  "pytest>=8.3",
+  "pytest-asyncio>=1.0",
+  "aiosqlite>=0.21",
+  "greenlet>=3.2",
+]
+
+# -----------------------------------------------------------------------------
+# Console entry points (each references an existing `main()` in the module).
+# -----------------------------------------------------------------------------
+[project.scripts]
+elite-coder = "run:main"
+elite-coder-assistant = "assistant:main"
+elite-coder-benchmark = "benchmarks:main"
+elite-coder-benchmark-index = "benchmark_index:main"
+elite-coder-db-setup = "db_setup:main"
+elite-coder-migrate-chroma = "migrate_chroma_to_pg:main"
+
+# -----------------------------------------------------------------------------
+# Packaging: ship only the root assistant modules. backend/, frontend/ and
+# training/ are executed from the checkout (the backend owns its own venv), so
+# package auto-discovery is disabled to keep wheels free of unrelated trees.
+# -----------------------------------------------------------------------------
+[tool.setuptools]
+packages = []
+py-modules = [
+  "active_learning",
+  "assistant",
+  "benchmark_index",
+  "benchmarks",
+  "chunker",
+  "db_setup",
+  "memory",
+  "migrate_chroma_to_pg",
+  "pgstore",
+  "repair_tool",
+  "retrieval",
+  "run",
+  "web_assistant",
+]
+
+# -----------------------------------------------------------------------------
+# Ruff (lint + import ordering), aligned with backend/pyproject.toml.
+# -----------------------------------------------------------------------------
+[tool.ruff]
+# Lint against the requires-python floor so newer syntax is never suggested.
+target-version = "py310"
+line-length = 88
+extend-exclude = [
+  ".freebuff",
+  ".pytest_tmp",
+  "backend/.pytest_tmp",
+  "backend/.venv",
+  "multi-task-final",
+  "multi-task-model",
+  "rag_db",
+]
+
+[tool.ruff.lint]
+# B008: FastAPI's `Depends()` in argument defaults is the framework's
+#       idiomatic pattern (matches the reference implementation).
+# BLE001: Broad except is deliberate in the background scan path where the
+#         engine itself persists failure state.
+ignore = ["B008", "BLE001"]
+# Beyond Ruff's defaults: flake8-bugbear, flake8-blind-except, import sorting
+# and pyupgrade — the repository's coding standard.
+extend-select = ["B", "BLE", "I", "UP"]
+
+[tool.ruff.lint.isort]
+# Root modules import each other (e.g. `from pgstore import ...`); `app`
+# covers the backend package when resolved from backend/.
+known-first-party = [
+  "active_learning",
+  "app",
+  "assistant",
+  "benchmark_index",
+  "benchmarks",
+  "chunker",
+  "db_setup",
+  "memory",
+  "migrate_chroma_to_pg",
+  "pgstore",
+  "repair_tool",
+  "retrieval",
+  "run",
+  "web_assistant",
+]
+
+# -----------------------------------------------------------------------------
+# Black (formatting) — preserves the repository's existing 88-column style.
+# -----------------------------------------------------------------------------
+[tool.black]
+target-version = ["py310"]
+line-length = 88
+extend-exclude = '(backend/.venv|\.pytest_tmp|\.freebuff|multi-task-(final|model)|rag_db)'
+
+# -----------------------------------------------------------------------------
+# Pytest (root suite). Backend tests resolve backend/pytest.ini automatically
+# when invoked explicitly (e.g. `pytest backend/tests`), so their asyncio mode
+# and temp-dir settings remain untouched by this section.
+# -----------------------------------------------------------------------------
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = ["test_pgstore.py"]
+# Workspace-local temp root, same rationale as backend/pytest.ini: avoids OS
+# temp directories that may be locked down on some Windows environments.
+addopts = "--basetemp=.pytest_tmp"
+
+[tool.pycleaner]
+exclude = ["migrations/", "generated/"]
+line-length = 88

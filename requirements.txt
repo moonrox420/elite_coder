@@ -1,0 +1,32 @@
+# Runtime deps for the coding assistant. Heavy packages (torch, transformers,
+# sentence-transformers, tree-sitter) are intentionally left unpinned
+# because their installed versions vary by environment/GPU; only httpx's version
+# was verified against the development environment.
+# Vector store runs on PostgreSQL + pgvector (replaces local ChromaDB).
+ollama
+psycopg[binary]
+pgvector
+rank_bm25
+sentence-transformers
+tree-sitter
+tree-sitter-python
+tree-sitter-javascript
+tree-sitter-go
+tree-sitter-typescript
+tree-sitter-rust
+tree-sitter-java
+numpy
+tenacity
+transformers
+datasets
+scikit-learn
+torch
+
+# Directly imported by memory.py (ollama) and repair_tool.py (json_repair).
+httpx==0.28.1
+json-repair
+
+# Dev tooling
+ruff
+black
+app

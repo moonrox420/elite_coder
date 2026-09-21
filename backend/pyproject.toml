@@ -1,0 +1,6 @@
+[tool.ruff]
+exclude = [".pytest_tmp", ".venv"]
+
+[tool.pycleaner]
+exclude = ["migrations/", "generated/"]
+line-length = 88

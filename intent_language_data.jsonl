@@ -1,0 +1,310 @@
+{"text": "what is the capital of France?", "intent": "out_of_scope", "language": "unknown"}
+{"text": "quit session", "intent": "exit", "language": "unknown"}
+{"text": "how do indexes speed up lookups in databases?", "intent": "general_question", "language": "sql"}
+{"text": "hi, are you online?", "intent": "greeting", "language": "unknown"}
+{"text": "generate boilerplate code for a database adapter in go", "intent": "code_generation", "language": "go"}
+{"text": "generate boilerplate code for a database adapter in sql", "intent": "code_generation", "language": "sql"}
+{"text": "how do I bake chocolate cookies?", "intent": "out_of_scope", "language": "unknown"}
+{"text": "break down this decorator framework usage in sql", "intent": "code_explanation", "language": "sql"}
+{"text": "how does dynamic dispatch perform lookup inside javascript?", "intent": "code_explanation", "language": "javascript"}
+{"text": "explain this recursive function block written in c#", "intent": "code_explanation", "language": "c#"}
+{"text": "hi, are you online?", "intent": "greeting", "language": "unknown"}
+{"text": "how can I optimize this slow processing loop in typescript?", "intent": "code_improvement", "language": "typescript"}
+{"text": "implement a binary search algorithm using rust", "intent": "code_generation", "language": "rust"}
+{"text": "good morning coding helper", "intent": "greeting", "language": "unknown"}
+{"text": "recommend a good movie to watch", "intent": "out_of_scope", "language": "unknown"}
+{"text": "suggest modern cleaner language features for this old typescript code", "intent": "code_improvement", "language": "typescript"}
+{"text": "how does dynamic dispatch perform lookup inside java?", "intent": "code_explanation", "language": "java"}
+{"text": "optimize memory allocations inside this hot path written in typescript", "intent": "code_improvement", "language": "typescript"}
+{"text": "how does garbage collection work inside virtual machines?", "intent": "general_question", "language": "unknown"}
+{"text": "refactor this deeply nested conditional block in typescript", "intent": "code_improvement", "language": "typescript"}
+{"text": "hi, are you online?", "intent": "greeting", "language": "unknown"}
+{"text": "how do I bake chocolate cookies?", "intent": "out_of_scope", "language": "unknown"}
+{"text": "write a function to merge two sorted lists in go", "intent": "code_generation", "language": "go"}
+{"text": "write a function to merge two sorted lists in sql", "intent": "code_generation", "language": "sql"}
+{"text": "good morning coding helper", "intent": "greeting", "language": "unknown"}
+{"text": "suggest modern cleaner language features for this old sql code", "intent": "code_improvement", "language": "sql"}
+{"text": "generate boilerplate code for a database adapter in c++", "intent": "code_generation", "language": "c++"}
+{"text": "good morning coding helper", "intent": "greeting", "language": "unknown"}
+{"text": "make this asynchronous function memory-safe in bash", "intent": "code_improvement", "language": "bash"}
+{"text": "how do i write a thread pool in java?", "intent": "code_generation", "language": "java"}
+{"text": "generate boilerplate code for a database adapter in rust", "intent": "code_generation", "language": "rust"}
+{"text": "shutdown assistant please", "intent": "exit", "language": "unknown"}
+{"text": "shutdown assistant please", "intent": "exit", "language": "unknown"}
+{"text": "refactor this deeply nested conditional block in java", "intent": "code_improvement", "language": "java"}
+{"text": "explain the memory layout of arrays in c#", "intent": "code_explanation", "language": "c#"}
+{"text": "what does this complex pointer manipulation do in rust?", "intent": "code_explanation", "language": "rust"}
+{"text": "what does this complex pointer manipulation do in bash?", "intent": "code_explanation", "language": "bash"}
+{"text": "what is the capital of France?", "intent": "out_of_scope", "language": "unknown"}
+{"text": "hello there assistant", "intent": "greeting", "language": "unknown"}
+{"text": "what is the capital of France?", "intent": "out_of_scope", "language": "unknown"}
+{"text": "what are acid properties in databases?", "intent": "general_question", "language": "sql"}
+{"text": "shutdown assistant please", "intent": "exit", "language": "unknown"}
+{"text": "optimize memory allocations inside this hot path written in javascript", "intent": "code_improvement", "language": "javascript"}
+{"text": "what is a compiler?", "intent": "general_question", "language": "unknown"}
+{"text": "make this asynchronous function memory-safe in java", "intent": "code_improvement", "language": "java"}
+{"text": "quit session", "intent": "exit", "language": "unknown"}
+{"text": "how do I bake chocolate cookies?", "intent": "out_of_scope", "language": "unknown"}
+{"text": "suggest modern cleaner language features for this old javascript code", "intent": "code_improvement", "language": "javascript"}
+{"text": "recommend a good movie to watch", "intent": "out_of_scope", "language": "unknown"}
+{"text": "how does dynamic dispatch perform lookup inside typescript?", "intent": "code_explanation", "language": "typescript"}
+{"text": "what is the capital of France?", "intent": "out_of_scope", "language": "unknown"}
+{"text": "shutdown assistant please", "intent": "exit", "language": "unknown"}
+{"text": "how can I optimize this slow processing loop in sql?", "intent": "code_improvement", "language": "sql"}
+{"text": "suggest modern cleaner language features for this old go code", "intent": "code_improvement", "language": "go"}
+{"text": "hello there assistant", "intent": "greeting", "language": "unknown"}
+{"text": "recommend a good movie to watch", "intent": "out_of_scope", "language": "unknown"}
+{"text": "explain the difference between tcp and udp", "intent": "general_question", "language": "unknown"}
+{"text": "how do I bake chocolate cookies?", "intent": "out_of_scope", "language": "unknown"}
+{"text": "explain this recursive function block written in sql", "intent": "code_explanation", "language": "sql"}
+{"text": "quit session", "intent": "exit", "language": "unknown"}
+{"text": "implement a binary search algorithm using python", "intent": "code_generation", "language": "python"}
+{"text": "recommend a good movie to watch", "intent": "out_of_scope", "language": "unknown"}
+{"text": "good morning coding helper", "intent": "greeting", "language": "unknown"}
+{"text": "how do indexes speed up lookups in databases?", "intent": "general_question", "language": "sql"}
+{"text": "how can I optimize this slow processing loop in python?", "intent": "code_improvement", "language": "python"}
+{"text": "hi, are you online?", "intent": "greeting", "language": "unknown"}
+{"text": "explain the memory layout of arrays in python", "intent": "code_explanation", "language": "python"}
+{"text": "what does this complex pointer manipulation do in javascript?", "intent": "code_explanation", "language": "javascript"}
+{"text": "hello there assistant", "intent": "greeting", "language": "unknown"}
+{"text": "make this asynchronous function memory-safe in c#", "intent": "code_improvement", "language": "c#"}
+{"text": "hello there assistant", "intent": "greeting", "language": "unknown"}
+{"text": "what is the capital of France?", "intent": "out_of_scope", "language": "unknown"}
+{"text": "explain the memory layout of arrays in c++", "intent": "code_explanation", "language": "c++"}
+{"text": "hi, are you online?", "intent": "greeting", "language": "unknown"}
+{"text": "create an api endpoint to parse payload schemas with go", "intent": "code_generation", "language": "go"}
+{"text": "how can I optimize this slow processing loop in bash?", "intent": "code_improvement", "language": "bash"}
+{"text": "recommend a good movie to watch", "intent": "out_of_scope", "language": "unknown"}
+{"text": "suggest modern cleaner language features for this old rust code", "intent": "code_improvement", "language": "rust"}
+{"text": "optimize memory allocations inside this hot path written in c++", "intent": "code_improvement", "language": "c++"}
+{"text": "hello there assistant", "intent": "greeting", "language": "unknown"}
+{"text": "shutdown assistant please", "intent": "exit", "language": "unknown"}
+{"text": "refactor this deeply nested conditional block in rust", "intent": "code_improvement", "language": "rust"}
+{"text": "hello there assistant", "intent": "greeting", "language": "unknown"}
+{"text": "explain this recursive function block written in typescript", "intent": "code_explanation", "language": "typescript"}
+{"text": "how can I optimize this slow processing loop in java?", "intent": "code_improvement", "language": "java"}
+{"text": "generate boilerplate code for a database adapter in c#", "intent": "code_generation", "language": "c#"}
+{"text": "hi, are you online?", "intent": "greeting", "language": "unknown"}
+{"text": "how do i write a thread pool in go?", "intent": "code_generation", "language": "go"}
+{"text": "exit now", "intent": "exit", "language": "unknown"}
+{"text": "what does this complex pointer manipulation do in python?", "intent": "code_explanation", "language": "python"}
+{"text": "suggest modern cleaner language features for this old c# code", "intent": "code_improvement", "language": "c#"}
+{"text": "suggest modern cleaner language features for this old java code", "intent": "code_improvement", "language": "java"}
+{"text": "make this asynchronous function memory-safe in typescript", "intent": "code_improvement", "language": "typescript"}
+{"text": "how do I bake chocolate cookies?", "intent": "out_of_scope", "language": "unknown"}
+{"text": "how do indexes speed up lookups in databases?", "intent": "general_question", "language": "sql"}
+{"text": "explain this recursive function block written in java", "intent": "code_explanation", "language": "java"}
+{"text": "implement a binary search algorithm using java", "intent": "code_generation", "language": "java"}
+{"text": "create an api endpoint to parse payload schemas with sql", "intent": "code_generation", "language": "sql"}
+{"text": "break down this decorator framework usage in rust", "intent": "code_explanation", "language": "rust"}
+{"text": "hi, are you online?", "intent": "greeting", "language": "unknown"}
+{"text": "create an api endpoint to parse payload schemas with bash", "intent": "code_generation", "language": "bash"}
+{"text": "optimize memory allocations inside this hot path written in bash", "intent": "code_improvement", "language": "bash"}
+{"text": "hello there assistant", "intent": "greeting", "language": "unknown"}
+{"text": "optimize memory allocations inside this hot path written in rust", "intent": "code_improvement", "language": "rust"}
+{"text": "refactor this deeply nested conditional block in c#", "intent": "code_improvement", "language": "c#"}
+{"text": "create an api endpoint to parse payload schemas with rust", "intent": "code_generation", "language": "rust"}
+{"text": "hi, are you online?", "intent": "greeting", "language": "unknown"}
+{"text": "what does this complex pointer manipulation do in c++?", "intent": "code_explanation", "language": "c++"}
+{"text": "how does garbage collection work inside virtual machines?", "intent": "general_question", "language": "unknown"}
+{"text": "recommend a good movie to watch", "intent": "out_of_scope", "language": "unknown"}
+{"text": "hi, are you online?", "intent": "greeting", "language": "unknown"}
+{"text": "quit session", "intent": "exit", "language": "unknown"}
+{"text": "write a function to merge two sorted lists in c++", "intent": "code_generation", "language": "c++"}
+{"text": "what is the capital of France?", "intent": "out_of_scope", "language": "unknown"}
+{"text": "make this asynchronous function memory-safe in sql", "intent": "code_improvement", "language": "sql"}
+{"text": "write a function to merge two sorted lists in c#", "intent": "code_generation", "language": "c#"}
+{"text": "how do i write a thread pool in rust?", "intent": "code_generation", "language": "rust"}
+{"text": "shutdown assistant please", "intent": "exit", "language": "unknown"}
+{"text": "how do indexes speed up lookups in databases?", "intent": "general_question", "language": "sql"}
+{"text": "what are acid properties in databases?", "intent": "general_question", "language": "sql"}
+{"text": "exit now", "intent": "exit", "language": "unknown"}
+{"text": "explain the memory layout of arrays in javascript", "intent": "code_explanation", "language": "javascript"}
+{"text": "quit session", "intent": "exit", "language": "unknown"}
+{"text": "recommend a good movie to watch", "intent": "out_of_scope", "language": "unknown"}
+{"text": "hello there assistant", "intent": "greeting", "language": "unknown"}
+{"text": "hello there assistant", "intent": "greeting", "language": "unknown"}
+{"text": "suggest modern cleaner language features for this old python code", "intent": "code_improvement", "language": "python"}
+{"text": "good morning coding helper", "intent": "greeting", "language": "unknown"}
+{"text": "shutdown assistant please", "intent": "exit", "language": "unknown"}
+{"text": "recommend a good movie to watch", "intent": "out_of_scope", "language": "unknown"}
+{"text": "exit now", "intent": "exit", "language": "unknown"}
+{"text": "good morning coding helper", "intent": "greeting", "language": "unknown"}
+{"text": "how do I bake chocolate cookies?", "intent": "out_of_scope", "language": "unknown"}
+{"text": "optimize memory allocations inside this hot path written in go", "intent": "code_improvement", "language": "go"}
+{"text": "hi, are you online?", "intent": "greeting", "language": "unknown"}
+{"text": "hello there assistant", "intent": "greeting", "language": "unknown"}
+{"text": "make this asynchronous function memory-safe in javascript", "intent": "code_improvement", "language": "javascript"}
+{"text": "create an api endpoint to parse payload schemas with javascript", "intent": "code_generation", "language": "javascript"}
+{"text": "quit session", "intent": "exit", "language": "unknown"}
+{"text": "refactor this deeply nested conditional block in bash", "intent": "code_improvement", "language": "bash"}
+{"text": "quit session", "intent": "exit", "language": "unknown"}
+{"text": "create an api endpoint to parse payload schemas with java", "intent": "code_generation", "language": "java"}
+{"text": "break down this decorator framework usage in python", "intent": "code_explanation", "language": "python"}
+{"text": "what is a compiler?", "intent": "general_question", "language": "unknown"}
+{"text": "make this asynchronous function memory-safe in rust", "intent": "code_improvement", "language": "rust"}
+{"text": "how do I bake chocolate cookies?", "intent": "out_of_scope", "language": "unknown"}
+{"text": "break down this decorator framework usage in java", "intent": "code_explanation", "language": "java"}
+{"text": "good morning coding helper", "intent": "greeting", "language": "unknown"}
+{"text": "what are acid properties in databases?", "intent": "general_question", "language": "sql"}
+{"text": "quit session", "intent": "exit", "language": "unknown"}
+{"text": "exit now", "intent": "exit", "language": "unknown"}
+{"text": "what is the capital of France?", "intent": "out_of_scope", "language": "unknown"}
+{"text": "exit now", "intent": "exit", "language": "unknown"}
+{"text": "how do I bake chocolate cookies?", "intent": "out_of_scope", "language": "unknown"}
+{"text": "how do i write a thread pool in c#?", "intent": "code_generation", "language": "c#"}
+{"text": "hello there assistant", "intent": "greeting", "language": "unknown"}
+{"text": "create an api endpoint to parse payload schemas with c++", "intent": "code_generation", "language": "c++"}
+{"text": "how do i write a thread pool in javascript?", "intent": "code_generation", "language": "javascript"}
+{"text": "implement a binary search algorithm using bash", "intent": "code_generation", "language": "bash"}
+{"text": "exit now", "intent": "exit", "language": "unknown"}
+{"text": "explain this recursive function block written in javascript", "intent": "code_explanation", "language": "javascript"}
+{"text": "exit now", "intent": "exit", "language": "unknown"}
+{"text": "how does dynamic dispatch perform lookup inside go?", "intent": "code_explanation", "language": "go"}
+{"text": "explain this recursive function block written in c++", "intent": "code_explanation", "language": "c++"}
+{"text": "shutdown assistant please", "intent": "exit", "language": "unknown"}
+{"text": "good morning coding helper", "intent": "greeting", "language": "unknown"}
+{"text": "explain the difference between tcp and udp", "intent": "general_question", "language": "unknown"}
+{"text": "quit session", "intent": "exit", "language": "unknown"}
+{"text": "what does this complex pointer manipulation do in c#?", "intent": "code_explanation", "language": "c#"}
+{"text": "how does dynamic dispatch perform lookup inside c++?", "intent": "code_explanation", "language": "c++"}
+{"text": "how does dynamic dispatch perform lookup inside rust?", "intent": "code_explanation", "language": "rust"}
+{"text": "how can I optimize this slow processing loop in rust?", "intent": "code_improvement", "language": "rust"}
+{"text": "suggest modern cleaner language features for this old c++ code", "intent": "code_improvement", "language": "c++"}
+{"text": "what does this complex pointer manipulation do in go?", "intent": "code_explanation", "language": "go"}
+{"text": "what are acid properties in databases?", "intent": "general_question", "language": "sql"}
+{"text": "what is the capital of France?", "intent": "out_of_scope", "language": "unknown"}
+{"text": "what does this complex pointer manipulation do in java?", "intent": "code_explanation", "language": "java"}
+{"text": "optimize memory allocations inside this hot path written in sql", "intent": "code_improvement", "language": "sql"}
+{"text": "write a function to merge two sorted lists in python", "intent": "code_generation", "language": "python"}
+{"text": "exit now", "intent": "exit", "language": "unknown"}
+{"text": "quit session", "intent": "exit", "language": "unknown"}
+{"text": "suggest modern cleaner language features for this old bash code", "intent": "code_improvement", "language": "bash"}
+{"text": "refactor this deeply nested conditional block in c++", "intent": "code_improvement", "language": "c++"}
+{"text": "what is the capital of France?", "intent": "out_of_scope", "language": "unknown"}
+{"text": "recommend a good movie to watch", "intent": "out_of_scope", "language": "unknown"}
+{"text": "write a function to merge two sorted lists in rust", "intent": "code_generation", "language": "rust"}
+{"text": "explain this recursive function block written in rust", "intent": "code_explanation", "language": "rust"}
+{"text": "how do I bake chocolate cookies?", "intent": "out_of_scope", "language": "unknown"}
+{"text": "implement a binary search algorithm using c++", "intent": "code_generation", "language": "c++"}
+{"text": "how do i write a thread pool in typescript?", "intent": "code_generation", "language": "typescript"}
+{"text": "recommend a good movie to watch", "intent": "out_of_scope", "language": "unknown"}
+{"text": "how does garbage collection work inside virtual machines?", "intent": "general_question", "language": "unknown"}
+{"text": "implement a binary search algorithm using typescript", "intent": "code_generation", "language": "typescript"}
+{"text": "explain the memory layout of arrays in typescript", "intent": "code_explanation", "language": "typescript"}
+{"text": "what is a compiler?", "intent": "general_question", "language": "unknown"}
+{"text": "explain the difference between tcp and udp", "intent": "general_question", "language": "unknown"}
+{"text": "write a function to merge two sorted lists in typescript", "intent": "code_generation", "language": "typescript"}
+{"text": "create an api endpoint to parse payload schemas with c#", "intent": "code_generation", "language": "c#"}
+{"text": "make this asynchronous function memory-safe in c++", "intent": "code_improvement", "language": "c++"}
+{"text": "hi, are you online?", "intent": "greeting", "language": "unknown"}
+{"text": "hello there assistant", "intent": "greeting", "language": "unknown"}
+{"text": "what is the capital of France?", "intent": "out_of_scope", "language": "unknown"}
+{"text": "generate boilerplate code for a database adapter in python", "intent": "code_generation", "language": "python"}
+{"text": "refactor this deeply nested conditional block in sql", "intent": "code_improvement", "language": "sql"}
+{"text": "recommend a good movie to watch", "intent": "out_of_scope", "language": "unknown"}
+{"text": "how does dynamic dispatch perform lookup inside python?", "intent": "code_explanation", "language": "python"}
+{"text": "make this asynchronous function memory-safe in go", "intent": "code_improvement", "language": "go"}
+{"text": "explain the memory layout of arrays in sql", "intent": "code_explanation", "language": "sql"}
+{"text": "break down this decorator framework usage in c#", "intent": "code_explanation", "language": "c#"}
+{"text": "how does garbage collection work inside virtual machines?", "intent": "general_question", "language": "unknown"}
+{"text": "hello there assistant", "intent": "greeting", "language": "unknown"}
+{"text": "generate boilerplate code for a database adapter in bash", "intent": "code_generation", "language": "bash"}
+{"text": "explain the memory layout of arrays in java", "intent": "code_explanation", "language": "java"}
+{"text": "what is the capital of France?", "intent": "out_of_scope", "language": "unknown"}
+{"text": "good morning coding helper", "intent": "greeting", "language": "unknown"}
+{"text": "implement a binary search algorithm using go", "intent": "code_generation", "language": "go"}
+{"text": "good morning coding helper", "intent": "greeting", "language": "unknown"}
+{"text": "explain this recursive function block written in go", "intent": "code_explanation", "language": "go"}
+{"text": "quit session", "intent": "exit", "language": "unknown"}
+{"text": "good morning coding helper", "intent": "greeting", "language": "unknown"}
+{"text": "break down this decorator framework usage in typescript", "intent": "code_explanation", "language": "typescript"}
+{"text": "what does this complex pointer manipulation do in typescript?", "intent": "code_explanation", "language": "typescript"}
+{"text": "how can I optimize this slow processing loop in go?", "intent": "code_improvement", "language": "go"}
+{"text": "shutdown assistant please", "intent": "exit", "language": "unknown"}
+{"text": "write a function to merge two sorted lists in javascript", "intent": "code_generation", "language": "javascript"}
+{"text": "good morning coding helper", "intent": "greeting", "language": "unknown"}
+{"text": "implement a binary search algorithm using sql", "intent": "code_generation", "language": "sql"}
+{"text": "how does dynamic dispatch perform lookup inside c#?", "intent": "code_explanation", "language": "c#"}
+{"text": "create an api endpoint to parse payload schemas with python", "intent": "code_generation", "language": "python"}
+{"text": "exit now", "intent": "exit", "language": "unknown"}
+{"text": "recommend a good movie to watch", "intent": "out_of_scope", "language": "unknown"}
+{"text": "recommend a good movie to watch", "intent": "out_of_scope", "language": "unknown"}
+{"text": "optimize memory allocations inside this hot path written in java", "intent": "code_improvement", "language": "java"}
+{"text": "good morning coding helper", "intent": "greeting", "language": "unknown"}
+{"text": "refactor this deeply nested conditional block in javascript", "intent": "code_improvement", "language": "javascript"}
+{"text": "what is a compiler?", "intent": "general_question", "language": "unknown"}
+{"text": "hi, are you online?", "intent": "greeting", "language": "unknown"}
+{"text": "how do i write a thread pool in c++?", "intent": "code_generation", "language": "c++"}
+{"text": "how do indexes speed up lookups in databases?", "intent": "general_question", "language": "sql"}
+{"text": "hello there assistant", "intent": "greeting", "language": "unknown"}
+{"text": "explain this recursive function block written in python", "intent": "code_explanation", "language": "python"}
+{"text": "how do i write a thread pool in sql?", "intent": "code_generation", "language": "sql"}
+{"text": "generate boilerplate code for a database adapter in java", "intent": "code_generation", "language": "java"}
+{"text": "generate boilerplate code for a database adapter in javascript", "intent": "code_generation", "language": "javascript"}
+{"text": "good morning coding helper", "intent": "greeting", "language": "unknown"}
+{"text": "refactor this deeply nested conditional block in python", "intent": "code_improvement", "language": "python"}
+{"text": "shutdown assistant please", "intent": "exit", "language": "unknown"}
+{"text": "what is the capital of France?", "intent": "out_of_scope", "language": "unknown"}
+{"text": "recommend a good movie to watch", "intent": "out_of_scope", "language": "unknown"}
+{"text": "shutdown assistant please", "intent": "exit", "language": "unknown"}
+{"text": "what is the capital of France?", "intent": "out_of_scope", "language": "unknown"}
+{"text": "break down this decorator framework usage in go", "intent": "code_explanation", "language": "go"}
+{"text": "how do i write a thread pool in python?", "intent": "code_generation", "language": "python"}
+{"text": "how can I optimize this slow processing loop in c++?", "intent": "code_improvement", "language": "c++"}
+{"text": "explain the memory layout of arrays in bash", "intent": "code_explanation", "language": "bash"}
+{"text": "how can I optimize this slow processing loop in c#?", "intent": "code_improvement", "language": "c#"}
+{"text": "exit now", "intent": "exit", "language": "unknown"}
+{"text": "write a function to merge two sorted lists in bash", "intent": "code_generation", "language": "bash"}
+{"text": "implement a binary search algorithm using c#", "intent": "code_generation", "language": "c#"}
+{"text": "how does garbage collection work inside virtual machines?", "intent": "general_question", "language": "unknown"}
+{"text": "how do I bake chocolate cookies?", "intent": "out_of_scope", "language": "unknown"}
+{"text": "shutdown assistant please", "intent": "exit", "language": "unknown"}
+{"text": "shutdown assistant please", "intent": "exit", "language": "unknown"}
+{"text": "how do I bake chocolate cookies?", "intent": "out_of_scope", "language": "unknown"}
+{"text": "how can I optimize this slow processing loop in javascript?", "intent": "code_improvement", "language": "javascript"}
+{"text": "what are acid properties in databases?", "intent": "general_question", "language": "sql"}
+{"text": "quit session", "intent": "exit", "language": "unknown"}
+{"text": "create an api endpoint to parse payload schemas with typescript", "intent": "code_generation", "language": "typescript"}
+{"text": "exit now", "intent": "exit", "language": "unknown"}
+{"text": "write a function to merge two sorted lists in java", "intent": "code_generation", "language": "java"}
+{"text": "quit session", "intent": "exit", "language": "unknown"}
+{"text": "what is a compiler?", "intent": "general_question", "language": "unknown"}
+{"text": "implement a binary search algorithm using javascript", "intent": "code_generation", "language": "javascript"}
+{"text": "break down this decorator framework usage in javascript", "intent": "code_explanation", "language": "javascript"}
+{"text": "hi, are you online?", "intent": "greeting", "language": "unknown"}
+{"text": "generate boilerplate code for a database adapter in typescript", "intent": "code_generation", "language": "typescript"}
+{"text": "how do i write a thread pool in bash?", "intent": "code_generation", "language": "bash"}
+{"text": "break down this decorator framework usage in bash", "intent": "code_explanation", "language": "bash"}
+{"text": "make this asynchronous function memory-safe in python", "intent": "code_improvement", "language": "python"}
+{"text": "how do I bake chocolate cookies?", "intent": "out_of_scope", "language": "unknown"}
+{"text": "hi, are you online?", "intent": "greeting", "language": "unknown"}
+{"text": "what does this complex pointer manipulation do in sql?", "intent": "code_explanation", "language": "sql"}
+{"text": "optimize memory allocations inside this hot path written in python", "intent": "code_improvement", "language": "python"}
+{"text": "explain this recursive function block written in bash", "intent": "code_explanation", "language": "bash"}
+{"text": "exit now", "intent": "exit", "language": "unknown"}
+{"text": "exit now", "intent": "exit", "language": "unknown"}
+{"text": "explain the difference between tcp and udp", "intent": "general_question", "language": "unknown"}
+{"text": "explain the memory layout of arrays in rust", "intent": "code_explanation", "language": "rust"}
+{"text": "recommend a good movie to watch", "intent": "out_of_scope", "language": "unknown"}
+{"text": "explain the memory layout of arrays in go", "intent": "code_explanation", "language": "go"}
+{"text": "how does dynamic dispatch perform lookup inside bash?", "intent": "code_explanation", "language": "bash"}
+{"text": "how do I bake chocolate cookies?", "intent": "out_of_scope", "language": "unknown"}
+{"text": "how does dynamic dispatch perform lookup inside sql?", "intent": "code_explanation", "language": "sql"}
+{"text": "hi, are you online?", "intent": "greeting", "language": "unknown"}
+{"text": "break down this decorator framework usage in c++", "intent": "code_explanation", "language": "c++"}
+{"text": "how do I bake chocolate cookies?", "intent": "out_of_scope", "language": "unknown"}
+{"text": "what is the capital of France?", "intent": "out_of_scope", "language": "unknown"}
+{"text": "shutdown assistant please", "intent": "exit", "language": "unknown"}
+{"text": "exit now", "intent": "exit", "language": "unknown"}
+{"text": "quit session", "intent": "exit", "language": "unknown"}
+{"text": "refactor this deeply nested conditional block in go", "intent": "code_improvement", "language": "go"}
+{"text": "good morning coding helper", "intent": "greeting", "language": "unknown"}
+{"text": "optimize memory allocations inside this hot path written in c#", "intent": "code_improvement", "language": "c#"}
+{"text": "quit session", "intent": "exit", "language": "unknown"}
+{"text": "shutdown assistant please", "intent": "exit", "language": "unknown"}
+{"text": "what is the capital of France?", "intent": "out_of_scope", "language": "unknown"}
+{"text": "how do I bake chocolate cookies?", "intent": "out_of_scope", "language": "unknown"}
+{"text": "explain the difference between tcp and udp", "intent": "general_question", "language": "unknown"}
+{"text": "hello there assistant", "intent": "greeting", "language": "unknown"}
+{"text": "exit now", "intent": "exit", "language": "unknown"}

@@ -1,0 +1,18 @@
+# Runtime dependencies for the ComfyAudit backend.
+fastapi
+uvicorn[standard]
+sqlalchemy[asyncio]
+asyncpg
+pydantic
+pydantic-settings
+email-validator
+PyJWT
+bcrypt
+python-multipart
+
+# Test dependencies.
+pytest
+pytest-asyncio
+aiosqlite
+httpx
+greenlet

@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Model / training artifacts
+multi-task-final/
+multi-task-model/
+
+# Runtime logs and queues
+summaries.jsonl
+active_learning_queue.jsonl
+
+# Local environment/credentials
+.env
+
+# Caches
+.ruff_cache/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# ComfyAudit backend
+backend/.venv/
+backend/.pytest_tmp/
+backend/*.db
+backend/.ruff_cache/
+
+# ComfyAudit frontend
+frontend/node_modules/
+frontend/dist/
+frontend/*.tsbuildinfo
+
+# Archives and backups
+*.zip
+*.tar.gz
+*.bak
+*.pycleaner.bak
+
+# Test and temp outputs
+.pytest_tmp/
+.freebuff/
